@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-30T07:30:18.069Z",
+ "generated": "2026-11-06T11:36:56.372Z",
  "families": {
   "strategy": {
    "c": "1E2761",
@@ -47,6 +47,7 @@
   "S7",
   "S8",
   "S9",
+  "S10",
   "GP"
  ],
  "slides": [
@@ -3336,6 +3337,368 @@
   },
   {
    "slideNo": 129,
+   "session": "S10",
+   "type": "title",
+   "title": "S10 Agentic Marketing Workflows",
+   "subtitle": "Learn & Control: after Risk (S9); agents act across the whole loop",
+   "bullets": [
+    "Define an agentic marketing workflow and its four characteristics",
+    "Explain the difference between agentizing and reinventing a workflow",
+    "Apply McKinsey's five-step process and the six agent archetypes",
+    "Who benefits from agentic AI: startups or incumbents?",
+    "Assess chained agentic risks and place humans in the loop"
+   ],
+   "notes": "Session 10 closes the course by moving from AI that helps a marketer to AI that runs part of the marketing workflow. The goals are to define and design agentic workflows, separate agentizing from reinventing, judge who benefits, and manage the new chained risks.",
+   "family": "analytics"
+  },
+  {
+   "slideNo": 130,
+   "session": "S10",
+   "type": "picture",
+   "pictureType": "flow",
+   "title": "From a line to a loop",
+   "bullets": [
+    "Humans set goal: Budget, taste, guardrails, gates",
+    "Knowledge + planner: Context, segments, synthetic pretest",
+    "Content + compliance: Hundreds of variants, rules checked in-line",
+    "Operator: Buys, bids, shifts spend hourly",
+    "Analytics: Continuous; feeds back to planner"
+   ],
+   "caption": "Two steps vanish (legal revision cycle, post-campaign analytics); three boundaries collapse; humans sit at gates.",
+   "picture": {
+    "type": "flow",
+    "title": "From a line to a loop",
+    "items": [
+     {
+      "label": "Humans set goal",
+      "sub": "Budget, taste, guardrails, gates"
+     },
+     {
+      "label": "Knowledge + planner",
+      "sub": "Context, segments, synthetic pretest"
+     },
+     {
+      "label": "Content + compliance",
+      "sub": "Hundreds of variants, rules checked in-line"
+     },
+     {
+      "label": "Operator",
+      "sub": "Buys, bids, shifts spend hourly"
+     },
+     {
+      "label": "Analytics",
+      "sub": "Continuous; feeds back to planner"
+     }
+    ],
+    "caption": "Two steps vanish (legal revision cycle, post-campaign analytics); three boundaries collapse; humans sit at gates."
+   },
+   "notes": "The reinvented campaign is a loop, not a line. Humans set the goal and guardrails at the top. A knowledge agent carries context, a planner pretests segments, content agents generate variants, a compliance agent checks rules written up front, an operator buys and shifts spend, and analytics feeds results straight back. The legal revision cycle and the post-campaign report are not sped up; they are absorbed.",
+   "family": "analytics"
+  },
+  {
+   "slideNo": 131,
+   "session": "S10",
+   "type": "concept",
+   "title": "Agent vs assistant",
+   "definition": "An agentic workflow has AI agents that autonomously plan, execute and adapt tasks toward a goal using tools, data and other agents.",
+   "bullets": [
+    "Four characteristics: goal-directed autonomy, planning, tool use, adaptivity",
+    "Assistant: human directs each step; output is content",
+    "Agent: operates from a goal; output is actions and outcomes"
+   ],
+   "example": "Test: if nobody prompts it tomorrow, does work still get done? Assistant no; agent yes.",
+   "trap": "ChatGPT and Midjourney are assistants, not agents; the human still owns the workflow.",
+   "memorise": "Goal-directed autonomy, multi-step planning, tool use, adaptivity; agent owns part of the workflow.",
+   "notes": "Everything in Sessions 1 to 9 used AI as an assistant: you ask, it produces copy, an image or an analysis, and you decide the next step. An agent is different because you give it a goal, such as five thousand sign-ups under eight dollars each, and it plans the sub-tasks, calls tools like the ad platform and the CRM, acts, and adapts when results come in. MIT SMR calls it a tool that learns and a worker that is owned. Marketing suits agents because its work is repeatable but variable, data-rich, has fast feedback loops, and shows up directly in revenue and cost.",
+   "family": "analytics"
+  },
+  {
+   "slideNo": 132,
+   "session": "S10",
+   "type": "concept",
+   "title": "The five-step design process",
+   "definition": "McKinsey's process: taxonomy of tasks → agent archetypes → agents needed → human role → prioritise in waves.",
+   "bullets": [
+    "Taxonomy: break the workflow into microtasks and the systems behind them",
+    "Archetypes are reusable blueprints: content generator, knowledge, localization, analyzer, planner, operator",
+    "Integration, not model design, is the limiting factor; prioritise by readiness"
+   ],
+   "example": "Consumer brand: hundreds of microtasks, six archetypes, ~100 modular agents, three waves, 4× faster.",
+   "trap": "Assuming the model is the bottleneck; McKinsey says system interoperability is.",
+   "memorise": "Taxonomy → archetypes → agents → human role → waves; six archetypes.",
+   "notes": "You cannot design the future workflow without understanding the present one, so step one is a detailed taxonomy of tasks and the systems they touch. Step two groups tasks into archetypes so you do not build a bespoke agent for everything. Step three picks the agents and checks they can plug into the CRM, content library and ad platforms, which is where most projects stall. Step four defines where humans add taste and oversight. Step five sequences waves by efficiency potential, growth goals and technical readiness.",
+   "family": "analytics"
+  },
+  {
+   "slideNo": 133,
+   "session": "S10",
+   "type": "concept",
+   "title": "Agentizing vs reinventing",
+   "definition": "Agentizing adds agents to existing steps so the same process runs faster; reinventing redesigns the workflow as if agents had always existed.",
+   "bullets": [
+    "Agentization trap: efficiency without structural gain; 'paving the cow paths'",
+    "Old steps reflect human limits that agents remove ('there is no spoon')",
+    "Reinvention eliminates steps and collapses organisational boundaries"
+   ],
+   "example": "Legacy insurer: form → underwriter → pricing → quote, hours to days. Lemonade's Maya: underwriting inside the agent, ~90 seconds.",
+   "trap": "A faster line is a retrofit, not reinvention; ask whether steps vanished and the shape changed.",
+   "memorise": "Agentize = same shape faster; reinvent = steps eliminated, boundaries collapsed, line to loop.",
+   "notes": "This is the heart of the session and the professor's own sample exam question. Most firms drop agents into each step of today's workflow and get the same process a bit faster. The slides use the Matrix line, there is no spoon, to say that the steps we treat as fixed were designed around human constraints. Reinvention asks how we would design this today. Lemonade did not speed up its underwriters; it removed the underwriting stage by putting the decision inside the agent. In class we did the same to the campaign workflow: the legal revision cycle and the post-campaign analytics disappeared and the line became a loop.",
+   "family": "analytics"
+  },
+  {
+   "slideNo": 134,
+   "session": "S10",
+   "type": "concept",
+   "title": "Who benefits: five forces",
+   "definition": "HBR's five forces shift advantage from scale of resources to speed of learning, favouring AI-native startups but leaving incumbents real assets.",
+   "bullets": [
+    "Zero-latency iteration; automated go-to-market; autonomous functions",
+    "Radical capital efficiency; AI-driven flywheel of compounding knowledge",
+    "Incumbents keep distribution, trust, data, domain experts; must re-architect before automating"
+   ],
+   "example": "Six-to-eight person product teams become two people; Series A on $2m, 80% less; Lemonade's risk knowledge cannot be copied.",
+   "trap": "Saying startups win outright; incumbents keep trust, distribution and experts.",
+   "memorise": "Five forces: iteration, go-to-market, autonomous functions, capital efficiency, flywheel.",
+   "notes": "Incumbents used to win on scale: capital, people, data, distribution and time to build systems. The first two forces collapse time and cost to market, the next two collapse headcount and funding, and the flywheel rewards deep workflow knowledge over size. So startups benefit first and most. But incumbents are not finished: they keep brand trust, distribution, proprietary data, a compliance record and the domain experts agentic systems need. Their most common mistake is automating before re-architecting.",
+   "family": "analytics"
+  },
+  {
+   "slideNo": 135,
+   "session": "S10",
+   "type": "concept",
+   "title": "Chained risks and humans in the loop",
+   "definition": "Linked agents create chained, cascading risks; humans belong at approval gates, exception handling and audit or override, not everywhere.",
+   "bullets": [
+    "Five drivers: chained vulnerabilities, cross-agent escalation, synthetic identity, untraceable leakage, data corruption",
+    "Agents are 'digital insiders'; cause is interconnection without checks",
+    "Controls: agent identity and access management, logging, sandboxes, kill switch"
+   ],
+   "example": "Credit-data agent misclassifies debt as income; scoring and approval agents grant a risky loan. 80% of organisations report risky agent behaviour.",
+   "trap": "Approving every agent action recreates the old chain; removing humans ignores cascading risk.",
+   "memorise": "Approval gates, exception handling, audit and override; judgment where it adds value or manages risk.",
+   "notes": "Session 9 looked at one system's bias, IP and privacy risks. Agents add a new dimension because they are linked: a flaw in one cascades and is amplified downstream, a compromised agent can abuse the trust others give it, identities can be forged, data moves between agents without logs, and bad data spreads silently. The answer is not humans everywhere, which would be the agentization trap in governance form, but humans placed deliberately: sign-off before high-stakes actions, escalation of unusual cases, and the ability to audit, reverse and retrain. MIT SMR calls this the supervision-versus-autonomy tension.",
+   "family": "analytics"
+  },
+  {
+   "slideNo": 136,
+   "session": "S10",
+   "type": "distinctions",
+   "title": "Pairs the exam will test",
+   "table": {
+    "headers": [
+     "Dimension",
+     "A",
+     "B"
+    ],
+    "rows": [
+     [
+      "Who directs",
+      "Assistant: human directs every step",
+      "Agent: operates from a goal, owns workflow"
+     ],
+     [
+      "Approach",
+      "Agentizing: agents on old steps, same shape",
+      "Reinventing: steps eliminated, boundaries collapsed"
+     ],
+     [
+      "Insurance",
+      "Legacy: form → underwriter → quote, days",
+      "Lemonade: underwriting inside Maya, ~90 seconds"
+     ],
+     [
+      "Scope",
+      "Retrofit: quick, cheap, limited gain",
+      "Reengineer: slower, bigger, risk of obsolescence"
+     ],
+     [
+      "Who wins",
+      "Startups: speed, capital efficiency, flywheel",
+      "Incumbents: trust, distribution, data, experts"
+     ],
+     [
+      "Risk",
+      "S9: bias, IP, privacy in one system",
+      "S10: chained, escalation, identity, leakage, corruption"
+     ]
+    ]
+   },
+   "bullets": [
+    "Who directs | Assistant: human directs every step | Agent: operates from a goal, owns workflow",
+    "Approach | Agentizing: agents on old steps, same shape | Reinventing: steps eliminated, boundaries collapsed",
+    "Insurance | Legacy: form → underwriter → quote, days | Lemonade: underwriting inside Maya, ~90 seconds",
+    "Scope | Retrofit: quick, cheap, limited gain | Reengineer: slower, bigger, risk of obsolescence",
+    "Who wins | Startups: speed, capital efficiency, flywheel | Incumbents: trust, distribution, data, experts",
+    "Risk | S9: bias, IP, privacy in one system | S10: chained, escalation, identity, leakage, corruption"
+   ],
+   "notes": "Every row is a likely 'explain the difference' question. The agentizing-versus-reinventing row is the professor's own sample; the legacy-insurer-versus-Lemonade row is the example to cite.",
+   "family": "analytics"
+  },
+  {
+   "slideNo": 137,
+   "session": "S10",
+   "type": "readings",
+   "title": "The readings in one slide",
+   "bullets": [
+    "Esber et al. (McKinsey, 2026) – Reinventing Marketing Workflows — Five-step process, six archetypes, hybrid human–agent workforce; gen AI paradox (90% experimenting, <10% value; 10–30% revenue)",
+    "Lee, Mantia & McNeill (HBR, 2026) – Agentic AI Supercharges Startups — Five forces compress entrepreneurship; incumbents must re-architect before automating (6–8 person team → 2 people)",
+    "McKinsey Quarterly (2025) – Deploying Agentic AI with Safety and Security — Agents are digital insiders; five chained risk drivers; IAM, traceability, kill switches ($2.6–4.4 trillion; 80% risky behaviour)",
+    "Ransbotham et al. (MIT SMR–BCG, 2025) – The Emerging Agentic Enterprise — Tool/coworker duality; four tensions; governance hubs before autonomy; HR for agents (35% adoption in two years; 250% decision authority)"
+   ],
+   "readings": [
+    {
+     "ref": "Esber et al. (McKinsey, 2026) – Reinventing Marketing Workflows",
+     "point": "Five-step process, six archetypes, hybrid human–agent workforce; gen AI paradox",
+     "number": "90% experimenting, <10% value; 10–30% revenue"
+    },
+    {
+     "ref": "Lee, Mantia & McNeill (HBR, 2026) – Agentic AI Supercharges Startups",
+     "point": "Five forces compress entrepreneurship; incumbents must re-architect before automating",
+     "number": "6–8 person team → 2 people"
+    },
+    {
+     "ref": "McKinsey Quarterly (2025) – Deploying Agentic AI with Safety and Security",
+     "point": "Agents are digital insiders; five chained risk drivers; IAM, traceability, kill switches",
+     "number": "$2.6–4.4 trillion; 80% risky behaviour"
+    },
+    {
+     "ref": "Ransbotham et al. (MIT SMR–BCG, 2025) – The Emerging Agentic Enterprise",
+     "point": "Tool/coworker duality; four tensions; governance hubs before autonomy; HR for agents",
+     "number": "35% adoption in two years; 250% decision authority"
+    }
+   ],
+   "notes": "McKinsey gives the how, five steps; HBR gives the why now and for whom, five forces; McKinsey Quarterly gives what can go wrong, five chained risks; MIT SMR gives how to manage the paradox, four tensions. The thread: the technology is the easy part.",
+   "family": "analytics"
+  },
+  {
+   "slideNo": 138,
+   "session": "S10",
+   "type": "exercise",
+   "title": "In-class exercise: what it taught",
+   "definition": "Redesign the six-step campaign workflow for agentic AI: diagnose human constraints, show agentized vs reinvented versions, new opportunities and human role (3 slides).",
+   "example": "The insurance example applied to marketing: agentizing is the trap; reinvention changes the shape.",
+   "bullets": [
+    "Diagnose the human constraint behind each step before redesigning",
+    "Legal revision cycle and post-campaign analytics vanish; the line becomes a loop",
+    "Humans move upstream to goals and rules, downstream to exceptions and audits"
+   ],
+   "notes": "Our group's deck, which the professor praised, diagnosed the human constraint behind each step, showed the agentized trap for contrast, then the loop. Two steps eliminated, three boundaries collapsed, a pod of three to four replacing six teams, with gates for new claims, sensitive segments and spend thresholds.",
+   "family": "analytics"
+  },
+  {
+   "slideNo": 139,
+   "session": "S10",
+   "type": "likely",
+   "title": "Likely exam questions (1 of 2)",
+   "mcq": [
+    {
+     "stem": "Adding an AI agent to each existing step so the process runs faster is best called",
+     "options": [
+      "Reinventing the workflow",
+      "Agentizing the workflow",
+      "An autonomous business function",
+      "Retrofit-versus-reengineer tension"
+     ],
+     "answer": 1,
+     "why": "Same structure, faster execution: the agentization trap."
+    },
+    {
+     "stem": "Which is one of the four characteristics of an agentic workflow?",
+     "options": [
+      "A human directs every step",
+      "Content produced on request",
+      "Goal-directed autonomy",
+      "A fixed script"
+     ],
+     "answer": 2,
+     "why": "Autonomy, planning, tool use, adaptivity; the others describe assistants."
+    }
+   ],
+   "bullets": [
+    "Adding an AI agent to each existing step so the process runs faster is best called",
+    "Which is one of the four characteristics of an agentic workflow?"
+   ],
+   "notes": "Expect a definition MCQ on the four characteristics, a case-match on the chained risks, and the agentizing-versus-reinventing short question. Always give one example and one caveat.",
+   "family": "analytics"
+  },
+  {
+   "slideNo": 140,
+   "session": "S10",
+   "type": "likely",
+   "title": "Likely exam questions (2 of 2)",
+   "mcq": [
+    {
+     "stem": "A compromised agent exploiting the trust other agents give it is called",
+     "options": [
+      "Cross-agent task escalation",
+      "Data corruption propagation",
+      "Untraceable data leakage",
+      "Chained vulnerability"
+     ],
+     "answer": 0,
+     "why": "Escalation abuses inter-agent trust; the others are different drivers."
+    }
+   ],
+   "short": [
+    {
+     "stem": "Explain the difference between agentizing a marketing workflow and reinventing it for AI.",
+     "answer": "Agentizing adds agents to existing steps: same handoffs, same sequence, faster. Reinventing asks how the workflow would be designed today with agents, eliminating steps and collapsing boundaries. Lemonade put underwriting inside its agent and quotes in 90 seconds; a legacy insurer with agent support still takes days. Caveat: reengineering costs more and risks obsolescence, so plan in waves."
+    }
+   ],
+   "bullets": [
+    "A compromised agent exploiting the trust other agents give it is called",
+    "Explain the difference between agentizing a marketing workflow and reinventing it for AI."
+   ],
+   "notes": "Expect a definition MCQ on the four characteristics, a case-match on the chained risks, and the agentizing-versus-reinventing short question. Always give one example and one caveat.",
+   "family": "analytics"
+  },
+  {
+   "slideNo": 141,
+   "session": "S10",
+   "type": "links",
+   "title": "One more short question, and the links",
+   "short": [
+    {
+     "stem": "Where should humans sit in an agentic marketing workflow?",
+     "answer": "At approval gates for high-stakes, irreversible or regulated actions; in exception handling for low-confidence cases; and in audit and override everywhere else. Not humans everywhere, which recreates the old chain, and not nowhere, which ignores chained risks. Truist runs human-in and human-out-of-the-loop by risk level."
+    }
+   ],
+   "links": [
+    {
+     "to": "S9",
+     "how": "Chained agent risks extend bias, IP and privacy; deliberate → policy, accidental → review still applies"
+    },
+    {
+     "to": "S2",
+     "how": "The planner agent pretests variants on synthetic audiences before spending"
+    }
+   ],
+   "bullets": [
+    "Where should humans sit in an agentic marketing workflow?",
+    "S9: Chained agent risks extend bias, IP and privacy; deliberate → policy, accidental → review still applies",
+    "S2: The planner agent pretests variants on synthetic audiences before spending"
+   ],
+   "notes": "Session 9's deliberate-versus-accidental logic still applies to agents; Session 2's synthetic participants become the planner's pretest audience.",
+   "family": "analytics"
+  },
+  {
+   "slideNo": 142,
+   "session": "S10",
+   "type": "recap",
+   "title": "S10 in 60 seconds",
+   "bullets": [
+    "Agent ≠ assistant: autonomy, planning, tools, adaptivity; it owns the workflow",
+    "Five steps: taxonomy, archetypes, agents, human role, waves; integration is the bottleneck",
+    "Agentize = same shape faster; reinvent = eliminate steps, collapse boundaries (Lemonade 90 s)",
+    "Five forces favour startups; incumbents keep trust, data, experts; re-architect first",
+    "Chained risks need gates, exceptions, audit; judgment where it adds value or manages risk"
+   ],
+   "notes": "Say the five lines aloud: agent versus assistant, five steps, agentize versus reinvent, five forces, chained risks with humans at gates.",
+   "family": "analytics"
+  },
+  {
+   "slideNo": 143,
    "session": "GP",
    "type": "title",
    "title": "GP Group Project – Advertising Personalisation",
@@ -3351,7 +3714,7 @@
    "family": "project"
   },
   {
-   "slideNo": 130,
+   "slideNo": 144,
    "session": "GP",
    "type": "picture",
    "pictureType": "flow",
@@ -3395,7 +3758,7 @@
    "family": "project"
   },
   {
-   "slideNo": 131,
+   "slideNo": 145,
    "session": "GP",
    "type": "concept",
    "title": "Heterogeneity is the problem",
@@ -3412,7 +3775,7 @@
    "family": "project"
   },
   {
-   "slideNo": 132,
+   "slideNo": 146,
    "session": "GP",
    "type": "concept",
    "title": "Research you can defend",
@@ -3429,7 +3792,7 @@
    "family": "project"
   },
   {
-   "slideNo": 133,
+   "slideNo": 147,
    "session": "GP",
    "type": "concept",
    "title": "Usable segments",
@@ -3446,7 +3809,7 @@
    "family": "project"
   },
   {
-   "slideNo": 134,
+   "slideNo": 148,
    "session": "GP",
    "type": "concept",
    "title": "Motivation → creative link",
@@ -3463,7 +3826,7 @@
    "family": "project"
   },
   {
-   "slideNo": 135,
+   "slideNo": 149,
    "session": "GP",
    "type": "concept",
    "title": "Validate and govern",
@@ -3480,7 +3843,7 @@
    "family": "project"
   },
   {
-   "slideNo": 136,
+   "slideNo": 150,
    "session": "GP",
    "type": "distinctions",
    "title": "Cosmetic variation vs genuine personalisation",
@@ -3535,7 +3898,7 @@
    "family": "project"
   },
   {
-   "slideNo": 137,
+   "slideNo": 151,
    "session": "GP",
    "type": "readings",
    "title": "The readings in one slide",
@@ -3553,7 +3916,7 @@
    "family": "project"
   },
   {
-   "slideNo": 138,
+   "slideNo": 152,
    "session": "GP",
    "type": "exercise",
    "title": "In-class exercise: what it taught",
@@ -3568,7 +3931,7 @@
    "family": "project"
   },
   {
-   "slideNo": 139,
+   "slideNo": 153,
    "session": "GP",
    "type": "likely",
    "title": "Likely exam questions (1 of 2)",
@@ -3604,7 +3967,7 @@
    "family": "project"
   },
   {
-   "slideNo": 140,
+   "slideNo": 154,
    "session": "GP",
    "type": "likely",
    "title": "Likely exam questions (2 of 2)",
@@ -3635,7 +3998,7 @@
    "family": "project"
   },
   {
-   "slideNo": 141,
+   "slideNo": 155,
    "session": "GP",
    "type": "links",
    "title": "One more short question, and the links",
@@ -3664,7 +4027,7 @@
    "family": "project"
   },
   {
-   "slideNo": 142,
+   "slideNo": 156,
    "session": "GP",
    "type": "recap",
    "title": "GP in 60 seconds",
@@ -3679,7 +4042,7 @@
    "family": "project"
   },
   {
-   "slideNo": 143,
+   "slideNo": 157,
    "session": "END",
    "type": "recall",
    "title": "Ten lists to say aloud in under a minute",

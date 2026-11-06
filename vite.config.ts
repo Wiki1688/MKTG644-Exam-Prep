@@ -24,7 +24,7 @@ export default defineConfig({
       },
       workbox: {
         globPatterns: ["**/*.{js,css,html,svg,png,json}"],
-        runtimeCaching: [{ urlPattern: /\/content\/.*\.json$/, handler: "StaleWhileRevalidate", options: { cacheName: "content" } }]
+        runtimeCaching: [{ urlPattern: /\/content\/.*\.json$/, handler: "StaleWhileRevalidate", options: { cacheName: "content-v2" } }]
       }
     })
   ],

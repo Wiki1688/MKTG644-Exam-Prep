@@ -34,11 +34,25 @@ All slides live in one file: `public/content/slides.json` (generated from the re
 
 Each slide object has: `slideNo`, `session` (S1…S9, S10, GP), `type` (title | picture | concept | distinctions | readings | exercise | likely | links | recap), `title`, `family` (strategy | promotion | price | service | analytics | risk | project) and type-specific fields (`definition`, `bullets`, `example`, `trap`, `memorise`, `notes`, `picture`, `table`, `readings`, `mcq`, `short`, `links`, `caption`).
 
-### Add Session 10
-1. Generate the Session 10 slide objects (same schema) – e.g. by re-running the deck builder with `S10.json` added, or by hand.
-2. Append them to `slides.json → slides[]` with `session: "S10"` and a `family` (suggest `"analytics"` or add a new family entry under `families`).
-3. Add `"S10"` to `slides.json → order` **between `"S9"` and `"GP"`**.
-4. The home map places S10 automatically under "Learn & control" (edit `layers` in `src/pages.tsx` → `Home` if you want it elsewhere).
+### What's new (v2, 6 Nov 2026)
+- **Session 10 – Agentic Marketing Workflows** is in (14 slides, slides 129–142, "Learn & control" layer, analytics colour). Total 157 slides; exam-day flashcards now 110 cards.
+- Progress schema bumped to **v2** with an automatic migration: Session 10 was inserted before the Group Project, so saved "Got it / Revisit", bookmarks, notes and "resume" positions for GP slides are shifted to their new numbers. Nothing is lost.
+- Runtime content cache renamed to `content-v2` so returning phones fetch the new `slides.json` on first load after the deploy.
+
+### Push this update (Vercel redeploys automatically)
+```
+cd <your exam-prep folder>
+git add .
+git commit -m "Add Session 10 (agentic workflows), progress migration v2"
+git push
+```
+Wait ~1 minute, open the Vercel URL, pull-to-refresh once on the phone (the service worker swaps to the new build on the second load).
+
+### Adding another session later
+1. Generate the slide objects (same schema) and append them to `slides.json → slides[]`.
+2. Add the session id to `slides.json → order` in course position.
+3. If you insert (rather than append at the end), bump `VERSION` in `src/store.ts` and extend the shift in `migrate()` so saved progress keyed by `slideNo` moves with the slides.
+4. Add the session to a layer in `src/pages.tsx → Home → layers`.
 5. Commit and push.
 
 ## Move progress between phone and laptop

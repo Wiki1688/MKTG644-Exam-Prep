@@ -38,7 +38,7 @@ export function Home({ content }: Ctx) {
   const layers = [
     { label: "Strategy", sub: "Why we market", sessions: ["S1"] },
     { label: "Tactics – the 4Ps with AI", sub: "Promotion S2–S5 · Price S6 · Service S7", sessions: ["S2", "S3", "S4", "S5", "S6", "S7"] },
-    { label: "Learn & control", sub: "Analytics · Risk & governance", sessions: ["S8", "S9"] },
+    { label: "Learn & control", sub: "Analytics · Risk & governance · Agentic workflows", sessions: ["S8", "S9", "S10"] },
     { label: "Group project", sub: "Runs through all three layers", sessions: ["GP"] },
   ].filter(l => l.sessions.some(s => content.order.includes(s)));
   const totalSlides = content.slides.length, viewed = Object.keys(p.viewed).length;
